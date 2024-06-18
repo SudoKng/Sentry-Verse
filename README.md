@@ -25,10 +25,11 @@ You can access the DApp through the following link: [sentry-verse.netlify.app](h
 ## Getting Started
 
 To get started with the DApp, follow these steps:
+NOTE: This application runs on the base sepolia test net, in order to carry out tasks you need to hold test ETH on this network for gas fees. visit [Base Sepolia Faucet](https://www.alchemy.com/faucets/base-sepolia) read through the following instructions if you have issues swithcing to the test network.
 
 1. **Access the DApp**: Visit [sentry-verse.netlify.app](https://sentry-verse.netlify.app).
 2. **Connect Wallet**: Ensure you have a compatible wallet (such as MetaMask) installed and connected to the Base Sepolia test network, if you are having issues switching your network read this article [Connect to base sepolia network](https://revoke.cash/learn/wallets/add-network/base-sepolia)
-3. **Visit Faucet**: in order to perfrom tasks on the application you need to hold SVE. (sentry verse tokens) after you have successfully switched to the base sepolia network copy and paste in your EVM wallet address (Ethereum wallet address) into the faucet and claim tokens.
+3. **Visit Faucet**: in order to perfrom tasks on the application you need to hold SVE. (sentry verse tokens) after you have successfully switched to the base sepolia network copy and paste in your EVM wallet address (Ethereum wallet address) into the faucet and claim tokens. visit [sentry-verse-faucet.netlify.app](https://sentry-verse-faucet.netlify.app/?)
 4. **Participate in Voting**: Once verified, you can participate in the voting processes available on the DApp.
 5. **Verify Identity**: Complete the identity verification process on the platform.
 
