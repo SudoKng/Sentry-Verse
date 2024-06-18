@@ -15,7 +15,7 @@ You can access the DApp through the following link: [sentry-verse.netlify.app](h
 
 ## Network
 
-- **Supported Network**: Sepolia Test Network
+- **Supported Network**: Base Sepolia Test Network
 
 ## Contributors
 
