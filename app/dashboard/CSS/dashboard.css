@@ -1,0 +1,203 @@
+body {
+    background: linear-gradient(180deg, #0b0b0b, #1c1c3b, #2b2b4b);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: #fff; 
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden; 
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#walletAddress {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px; 
+    font-family: 'Roboto', sans-serif;
+    transition: background 0.3s, border 0.3s;
+    z-index: 1; 
+}
+
+#walletAddress:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.wallet-icon {
+}
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.wallet-balance {
+    display: block;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px; 
+    width: 100%;
+
+.title {
+    font-size: 2em;
+    margin-bottom: 2em;
+    color: #9b59b6;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 1em; /* Adjusted gap */
+    flex-wrap: wrap;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.cards-enter {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px; 
+    width: 180px; 
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    text-align: center;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px); 
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background 0.3s, border 0.3s, box-shadow 0.3s;
+    padding: 1em; 
+}
+
+.card a {
+    color: white; 
+    text-decoration: none; /* Removes underline */
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card h2 {
+    margin: 1em 0 0.5em 0;
+    color: #e1bbee;
+    font-weight: 600;
+    font-size: 1.2em;
+    font-family: 'Nunito', sans-serif;
+}
+
+.card p {
+    padding: 0 1em;
+    font-size: 0.9em;
+    font-family: 'Nunito', sans-serif;
+}
+
+.card .card-stats {
+    padding: 0.5em 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.1);
+    font-size: 0.8em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    background: linear-gradient(180deg, transparent, #2b2b4b);
+    padding: 10px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+        margin-top: 80px; /* More margin for mobile */
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 55%; 
+        margin-bottom: 20px;
+    }
+
+    #walletAddress {
+        left: 10px;
+        right: 10px;
+        top: 10px;
+        padding: 12px;
+        background: rgba(0, 0, 0, 0.5); 
+        backdrop-filter: blur(10px); 
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 10px; 
+    }
+}
