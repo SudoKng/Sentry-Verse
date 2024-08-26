@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div id="walletAddress">
+        <img src="" alt="Wallet Icon" class="wallet-icon" id="walletIcon">
+        <div>
+            <span id="walletAddressText"></span>
+            <span class="wallet-balance" id="walletBalance"></span>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="title">What would you like <br>  to do today?</h1>
+        <div class="card-container cards-enter">
+            <div class="card">
+                <a href="depoll.html" class="card-link">
+                    <img src="../images/meta.gif" alt="Create Poll" class="card-image">
+                    <h2>Create Poll</h2>
+                    <p>Start a new poll to gather opinions and feedback from the community.</p>
+                    <div class="card-stats">
+                        <span>Polls: 50+</span>
+                        <span>Responses: 1K+</span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="card">
+                <a href="depoll.html" class="card-link">
+                    <img src="../images/world.gif" alt="Depoll" class="card-image">
+                    <h2>De-poll</h2>
+                    <p>End existing polls and review the collected data and insights.</p>
+                    <div class="card-stats">
+                        <span>Ended Polls: 30+</span>
+                        <span>Data Insights: 500+</span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="card">
+                <a href="identity.html" class="card-link">
+                    <img src="https://thirdweb.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpixels.8bd86469.png&w=1200&q=75" alt="Identity Verification" class="card-image">
+                    <h2>Identity Verification</h2>
+                    <p>Verify the identity of users to ensure secure and trusted interactions.</p>
+                    <div class="card-stats">
+                        <span>Verified Users: 1K+</span>
+                        <span>Pending: 100+</span>
+                    </div>
+                </a>
+            </div>            
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <img src="../images/logo.png" alt="Logo" class="footer-logo">
+            <span>&copy; Sentry Verse</span>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.5.2/web3.min.js"></script>
+    <script src="wallet.js"></script>
+</body>
+</html>
